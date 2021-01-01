@@ -1,0 +1,7 @@
+#!/bin/sh
+
+docker build -t influxdb-huetemp .
+
+docker tag app ghcr.io/rubiojr/influxdb-huetemp:latest
+
+docker push ghcr.io/rubiojr/influxdb-huetemp:latest
