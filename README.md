@@ -13,11 +13,10 @@ Sends data read from Philips Hue smart motion sensors to InfluxDB.
 
 ## Docker
 
-Edit `env-file` to add the required values.
+Edit `env-file` to add the required values, then:
 
 ```
-docker build -t huetemp .
-docker run --env-file env-file huetemp
+docker run --env-file ./env-file ghcr.io/rubiojr/influxdb-huetemp
 ```
 
 ## Hue Bridge account creation
